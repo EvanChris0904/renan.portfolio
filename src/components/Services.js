@@ -24,13 +24,13 @@ const Services = () => {
                 <motion.div className="services-box" whileInView={fade} initial={{opacity: 0}}>
                     <div className="services-card">
                         <BiCodeAlt className='services-icon' />
-                        <p className='services-title'>Web Development</p>
-                        <p className='services-desc'>I use various web technologies to develop attractive,creative, interactive, responsive and functional website layouts. </p>
+                        <p className='services-title'>Frontend Services</p>
+                        <p className='services-desc'>Building high-performance web apps with React, Next.js, Tailwind CSS, ShadCN UI, and headless CMS, optimized for speed and seamless UX.</p>
                     </div>
                     <div className="services-card">
                         <IoColorWandOutline className='services-icon' />
-                        <p className='services-title'>UI Design</p>
-                        <p className='services-desc'>I work with certain design tools to create high-fidelity designs and prototypes. I design accessible and usable products which aid business growth.</p>
+                        <p className='services-title'>Blockchain Services</p>
+                        <p className='services-desc'>Developing secure smart contracts, DApps, DeFi platforms, NFT marketplaces, tokens, and blockchain-integrated payment solutions.</p>
                     </div>
                 </motion.div>
               </div>
