@@ -121,24 +121,36 @@ textarea:-webkit-autofill:focus {
 /* Media Queries */
 @media screen and (max-width: 900px) {
 	.contact-box {
-		display: grid;
 		grid-template-columns: 1fr;
-		row-gap: 5rem;
+		row-gap: 3rem;
 	}
 
 	.right-box {
-		width: 90%;
-		margin: 0 auto;
+		width: 100%;
 	}
 }
 
 @media screen and (max-width: 550px) {
 	.contact-heading p,
 	.contact-hello p,
-	.hello-links,
+	.hello-links {
+		font-size: 90%;
+	}
+
+	.form-top {
+		flex-direction: column;
+		margin-bottom: 2rem;
+	}
+
+	.name,
+	.email {
+		width: 100%;
+		margin-bottom: 1.5rem;
+	}
+
 	input,
 	textarea {
-		font-size: 80%;
+		font-size: 90%;
 	}
 
 	.right-box {

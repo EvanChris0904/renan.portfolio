@@ -8,6 +8,7 @@ import ProfileImg from "../../images/profile_me.jpg";
 import NavLinks from "./NavLinks";
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
+import ThemeToggle from '../ThemeToggle';
 
 const navVariants = {
 	hidden: {
@@ -56,9 +57,10 @@ const Navbar = ({ nav, handleNav }) => {
 							onClick={handleNav}
 							to='home'
 							className='profile-name'>
-							Peace Jinadu-Paul
+							Renan Freitas Braga
 						</Link>
 						<NavLinks handleNav={handleNav} />
+						
 					</div>
 					<ul className='mid-details'>
 						<Link

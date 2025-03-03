@@ -5,7 +5,8 @@ import { BiDownload } from "react-icons/bi";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
-import CV from "../data/Peace Jinadu-Paul CV.pdf";
+import CV from "../data/Renan Freitas Braga CV.pdf";
+import ThemeToggle from './ThemeToggle';
 
 const HeroSection = ({ nav, handleNav }) => {
 	const scrollToTop = () => {
@@ -71,16 +72,19 @@ const HeroSection = ({ nav, handleNav }) => {
 	return (
 		<div className='hero-section' name='home' id='home'>
 			<div className='hero-overlay'></div>
+			<div className="header-controls">
+				<motion.div
+					variants={menuVariants}
+					initial='hidden'
+					whileInView='visible'
+					onClick={handleNav}
+					className='menu-icon'>
+					{nav ? <FaTimes /> : <FaBars />}
+				</motion.div>
+			</div>
+			<ThemeToggle />
 			<motion.div
 				// viewport={{ once: true }}
-				variants={menuVariants}
-				initial='hidden'
-				whileInView='visible'
-				onClick={handleNav}
-				className='menu-icon'>
-				{nav ? <FaTimes /> : <FaBars />}
-			</motion.div>
-			<motion.div
 				variants={heroVariants}
 				initial='hidden'
 				whileInView='visible'
@@ -94,17 +98,18 @@ const HeroSection = ({ nav, handleNav }) => {
 				whileInView='visible'
 				className='hero-content'>
 				<p className='hero-intro'>
-					<span>Peace</span> <span>Jinadu-Paul.</span>
+					<span>Renan</span> <span>Freitas Braga.</span>
 				</p>
 				<p className='hero-desc'>
-					I'm a <span className='hero-desc-sub'>Front End Developer.</span>
+					I'm a <span className='hero-desc-sub'>Senior Frontend Developer And Block Chain Engineer.</span>
 				</p>
 			</motion.div>
 			<motion.span
 				variants={contactVariants}
 				initial='hidden'
 				whileInView='visible'>
-				<a href={CV} download='Peace Jinadu-Paul CV' className='hero-contact'>
+				<a href={CV} download='Renan
+Freitas Braga CV' className='hero-contact'>
 					Download CV <BiDownload className='cv-icon' />
 				</a>
 			</motion.span>

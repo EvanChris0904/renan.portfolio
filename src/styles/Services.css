@@ -43,23 +43,29 @@
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+    .services-box {
+        gap: 2rem;
+    }
+
     .services-card {
         width: 100%;
-        padding: 1rem;
+        padding: 1.5rem;
+        max-width: none;
     }
 }
 
 @media screen and (max-width: 550px) {
     .services-icon {
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
+        font-size: 2rem;
     }
     
     .services-title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
     }
     
     .services-desc {
-        font-size: .7rem;
+        font-size: 0.8rem;
+        line-height: 1.6;
     }
 }
