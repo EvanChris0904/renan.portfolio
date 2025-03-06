@@ -23,7 +23,8 @@ import {
 	SiJenkins,
 	SiDocker,
 	SiKubernetes,
-	SiAmazonaws
+	SiAmazonaws,
+	SiPhp
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -44,6 +45,11 @@ export const SkillsData = {
 			{
 				name: "JavaScript",
 				icon: <DiJavascript1 />,
+				proficiency: "Expert"
+			},
+			{
+				name: "PHP",
+				icon: <SiPhp />,
 				proficiency: "Expert"
 			}
 		]

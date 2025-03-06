@@ -9,6 +9,7 @@
 - [Framer Motion](https://www.framer.com/motion/) - Animations
 - [Create React App](https://create-react-app.dev/) - Build tool
 - [Netlify](https://www.netlify.com/) - Hosting and Deployment
+- [PHP](https://www.php.net/) - Server-side Scripting Language
 
 ## How to run locally 💻
 
