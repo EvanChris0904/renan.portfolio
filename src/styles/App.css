@@ -57,8 +57,7 @@ body {
 .about,
 .skills,
 .services,
-.works,
-.contact {
+.works {
 	background-color: var(--section-bgd);
 	color: var(--nav-grey);
 	width: 100%;

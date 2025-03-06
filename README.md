@@ -50,4 +50,4 @@ npm run build
 
 ## Credits ✍
 
-Implementation by [@Pappyjay23](https://github.com/Pappyjay23)
+Implementation by [EvanChris0904](https://github.com/EvanChris0904)

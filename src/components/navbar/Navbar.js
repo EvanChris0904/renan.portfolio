@@ -59,7 +59,7 @@ const Navbar = ({ nav, handleNav }) => {
 							className='profile-name'>
 							Renan Freitas Braga
 						</Link>
-						<NavLinks handleNav={handleNav} />
+						{/* <NavLinks handleNav={handleNav} /> */}
 						
 					</div>
 					<ul className='mid-details'>
@@ -126,19 +126,6 @@ const Navbar = ({ nav, handleNav }) => {
 							<BiBookContent className='mid-icon' />
 							<li className='mid-link' onClick={handleNav}>
 								Works
-							</li>
-						</Link>
-						<Link
-							activeClass='active'
-							spy={true}
-							smooth={true}
-							offset={0}
-							duration={500}
-							to='contact'
-							className='mid-links'>
-							<BiEnvelope className='mid-icon' />
-							<li className='mid-link' onClick={handleNav}>
-								Contact
 							</li>
 						</Link>
 					</ul>
